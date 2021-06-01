@@ -5,7 +5,7 @@ from m5stack import lcd
 
 lcd.orient(lcd.LANDSCAPE)
 lcd.clear()
-lcd.print("System klar ...", 30, 32)
+lcd.print("System klart ...", 30, 32)
 
 net = network.WLAN(network.STA_IF)
 net.active(True)
@@ -27,6 +27,6 @@ while True:
         request = urequests.post(thingspeak_url + thingspeak_key,json=data,headers=headers)
 
         lcd.clear()
-        lcd.print("System klar ...", 30, 32)
+        lcd.print("System klart ...", 30, 32)
 
 request.close()
